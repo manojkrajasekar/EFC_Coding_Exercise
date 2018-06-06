@@ -1,0 +1,137 @@
+
+.movie-card-container {
+	display: flex;
+	margin: auto;
+	min-width: 560px;
+	max-width: 900px;
+	height: auto;
+}
+
+.movie-card-container > .movie-card {
+	display: flex;
+	flex-direction : column;
+	margin: 10px auto 10px auto;
+	min-width: 530px;
+	max-width: 1000px;
+	min-height: 480px;
+	max-height: 520px;
+	border-style: solid;
+    border-width: 0.5px; 
+}
+
+
+.movie-card-container > .movie-card > .movie-card-title-container {
+	float: left;
+	margin: 0.5px 0.5px 0.5px 0.5px;
+	min-height: 40px;
+	max-height: 60px;
+	min-width: 400px;
+	max-width: 1000px;
+	background-color: rgb(238, 235, 235);
+}
+
+.movie-card-container > .movie-card > .movie-card-title-container > .movie-card-title {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.movie-card-container > .movie-card > .movie-details-container {
+	display: flex;
+	min-width: 600px;
+	max-width: 700px;
+	min-height: 670px;
+	max-height: 750px;
+}
+
+.movie-card-container > .movie-card > .movie-details-container > .movie-poster {
+	float: left;
+	margin: 20px 0px 10px 10px;
+	min-width: 290px;
+	max-width: 380px;
+	min-height: 320px;
+	max-height: 440px;
+	background-image: contain;
+}
+
+.movie-card-container > .movie-card > .movie-details-container > .movie-details {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 10px 10px 40px;
+	min-width: 180px;
+	max-width: 300px;
+	min-height: 300px;
+	max-height: 400px;
+	/* border-style: solid;
+    border-width: 1px; 	  */
+}
+
+.movie-card-container > .movie-card > .movie-details-container > .movie-details > .movie-detail-title {
+	min-width: 200px;
+	min-height: 40px;
+	max-height: 70px;
+	border-bottom: solid 0.5px black;
+	margin: 45px 10px 10px 40px; 
+}
+
+.movie-card-container > .movie-card > .movie-details-container > .movie-details > .movie-detail-title > .movie-deatil-value {
+	margin-left: 2px;
+}
+
+
+
+.detail-title {
+	font-weight: 700;
+	float: left;
+}
+
+ @media only screen and (max-device-width: 515px){
+
+ 	.movie-card-container > .movie-card {
+ 		margin: 15px;
+ 	}
+  	
+	.movie-card-container > .movie-card > .movie-details-container > .movie-poster {
+		max-width: 120px;
+	}
+
+	.movie-card-container > .movie-card > .movie-details-container > .movie-details {
+		max-width: 200px;
+	}
+	  
+	.movie-card-container > .movie-card > .movie-details-container > .movie-details > .movie-detail-title {
+  		min-width: 70px;
+  		margin-left: 1px;
+	}
+} 
+
+@media only screen and (min-device-width: 515px) and (max-device-width: 572px) {
+	.movie-card-container > .movie-card > .movie-details-container > .movie-details > .movie-detail-title {
+  		max-width: 140px;
+  		margin-left: 2px;
+	}
+} 
+
+
+
+/* @media only screen and (min-width: 370px) and (max-width: 411px) 
+  {
+  	.movie-card-container > .movie-card {
+  		max-width: 411px;
+  	}
+
+  	.movie-card-container > .movie-card > .movie-details-container > .movie-poster {
+		max-width: 50px;
+  	}
+
+  	.movie-card-container > .movie-card > .movie-details-wrapper > .movie-details {
+  		max-width: 80px;
+	}
+} */
+
+
+
+
+
+
